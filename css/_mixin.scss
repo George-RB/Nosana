@@ -1,0 +1,17 @@
+@use '_variables';
+
+@mixin hover-text-effect($color, $underline: true) {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: $color;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  @if $underline {
+    border-bottom: 1px solid wheat;
+  } @else {
+    border-bottom: none;
+  }
+}

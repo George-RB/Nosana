@@ -1,0 +1,54 @@
+@use '_variables';
+@use '_mixin';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    justify-content: space-around;
+  }
+
+  // Здесь у нас группа ссылок из навбара, кроме последней
+  .group-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin-right: 32px;
+
+        &:nth-last-child(1) {
+          margin-right: 68px;
+        }
+
+        &:hover {
+          @include mixin.hover-text-effect(variables.$wheatColor, false)
+            // Используем пространство имен
+;
+        }
+      }
+    }
+
+    // Сделаем здесь ховер эффект при наведении курсора на навбар с именем Contact
+    .contact {
+      border-bottom: 1px solid #000;
+      padding: 5px;
+      font-weight: bold;
+
+      &:hover {
+        @include mixin.hover-text-effect(variables.$wheatColor, true)
+          // Используем пространство имен
+;
+      }
+    }
+  }
+}
