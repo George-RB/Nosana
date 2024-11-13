@@ -1,13 +1,17 @@
+@use 'media';
 @use 'nav';
 @use 'normalize';
+@use 'fonts';
 
 .container {
+  font-family: inter-medium;
   max-width: 1440px;
   margin: 0 auto;
-  background: forestgreen;
+  font-size: 16px;
+  // background: forestgreen;
   cursor: default;
 
   .wrapper {
-    margin: 0 120px;
+    margin: 30px 120px;
   }
 }

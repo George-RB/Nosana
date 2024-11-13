@@ -1,7 +1,9 @@
 @use '_variables';
 @use '_mixin';
+@use 'media';
 
 nav {
+  font-family: inter-regular;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +13,17 @@ nav {
     align-items: center;
     width: 140px;
     justify-content: space-around;
+
+    p {
+      font-family: 'Inter', sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      text-transform: lowercase;
+      font-size: 2.5rem;
+      margin: 0 0 0 10px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
   }
 
   // Здесь у нас группа ссылок из навбара, кроме последней
@@ -18,6 +31,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
 
     ul {
       display: flex;
@@ -31,7 +45,7 @@ nav {
         }
 
         &:hover {
-          @include mixin.hover-text-effect(variables.$wheatColor, false)
+          @include mixin.hover-text-effect(variables.$blackColor, false)
             // Используем пространство имен
 ;
         }
@@ -45,7 +59,7 @@ nav {
       font-weight: bold;
 
       &:hover {
-        @include mixin.hover-text-effect(variables.$wheatColor, true)
+        @include mixin.hover-text-effect(variables.$blackColor, true)
           // Используем пространство имен
 ;
       }

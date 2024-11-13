@@ -10,7 +10,7 @@
   }
 
   @if $underline {
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid darkslategrey;
   } @else {
     border-bottom: none;
   }
