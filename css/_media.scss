@@ -1,9 +1,22 @@
 @media (max-width: 1023px) {
   .container {
-    background: grey;
+    // background: grey;
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 
   .group-links {
     display: none !important;
+  }
+
+  .burger {
+    display: block !important;
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

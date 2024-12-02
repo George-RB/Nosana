@@ -1,9 +1,18 @@
 @media (max-width: 1023px) {
-  .container {
-    background: grey;
+  .container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .group-links {
     display: none !important;
+  }
+  .burger {
+    display: block !important;
+  }
+  .burger img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 nav {
@@ -66,6 +75,9 @@ nav .group-links .contact:hover {
 nav .group-links .contact:hover:hover {
   color: #777777;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+nav .burger {
+  display: none;
 }
 
 /* https://github.com/necolas/normalize.css/blob/master/normalize.css */

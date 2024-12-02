@@ -59,10 +59,13 @@ nav {
       font-weight: bold;
 
       &:hover {
-        @include mixin.hover-text-effect(variables.$blackColor, true)
-          // Используем пространство имен
-;
+        @include mixin.hover-text-effect(variables.$blackColor, true);
+        // Используем пространство имен
       }
     }
+  }
+
+  .burger {
+    display: none;
   }
 }
